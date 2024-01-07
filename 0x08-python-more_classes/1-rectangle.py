@@ -1,10 +1,14 @@
 #!/usr/bin/python3
 """
+created a class named Rectangel
 """
 
 
 class Rectangle:
     """
+    Making use of setters and getters in the class to
+    get and set different value so they can be used and so they can update
+    themselves easily
     """
     def __init__(self, width=0, height=0):
         if type(width) != int:
