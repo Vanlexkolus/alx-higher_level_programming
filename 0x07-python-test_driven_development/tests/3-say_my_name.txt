@@ -5,20 +5,23 @@ This is a test case for the function in 3.main.py
 
 ::
 Testing agains an integer
-    >>> say_my_name(2, name)
+    >>> say_my_name(2, "name")
     Traceback (most recent last call):
     TypeError: (first_name must be a string)
-    >>> say_my_name(name, 5)
+    >>> say_my_name("name", 5)
     Traceback (most recent last call):
     TypeError: (last_name must be a string)
 
 ::
 Testing against an empty argument
-    >>> say_my_name(NONE)
+    >>> say_my_name(None)
     Traceback (most recent last call)
     TypeError: (first_name must be a string)
 
 ::
 Testing against a string
-    >>> say_my_name(first, last)
+    >>> say_my_name("first", "last")
     My name is first last
+    >>> say_my_name("First", "Last")
+    My name is First Last
+
