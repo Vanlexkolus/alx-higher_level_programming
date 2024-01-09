@@ -2,7 +2,10 @@
 """
 writing a meethod that adds two int or floats together
 """
+
+
 def add_integer(a, b=98):
+
     """
     the following code is gonna check and raise errors
     if the following parameters are being breeched

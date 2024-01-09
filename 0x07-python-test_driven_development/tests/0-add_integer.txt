@@ -1,7 +1,9 @@
-The is the test case file
+The is the test case file, 
 ###################################################
 
-
+writing a meethod that adds two int or floats together
+the following code is gonna check and raise errors
+if the following parameters are being breeched
     >>> add_integer = __import__("0-add_integer").add_integer
 
 ::
