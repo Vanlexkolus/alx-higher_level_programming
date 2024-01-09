@@ -1,0 +1,41 @@
+This is the test case for the function 4-print_square which prints a print_square
+#################################################################################
+
+    >>> print_square = __import__('4-print_square').print_square
+
+
+::
+Testing agains an integer
+    >>> print_square(5)
+    #####
+    #####
+    #####
+    #####
+    #####
+
+::
+Testing against a float
+    >>> print_square(5.3)
+    Traceback (most recent call last):
+    TypeError: (size must be an integer)
+
+::
+Testing against zero and below zero
+    >>> print_square(0)
+    Traceback (most recent call last):
+    ValueError: (size must be >= 0)
+    >>> print_square(-2)
+    Traceback (most recent last call):
+    ValueError: (size must be >= 0)
+
+::
+Testing against an empty argument
+    >>> print_square(NONE)
+    Traceback (most recent call last)
+    TypeError: (size must be an integer)
+
+::
+Testing against infinity
+    >>> print_square(100e999)
+    Traceback (most recent call last):
+    OverflowError: (Can't create an indefinite size of square)
