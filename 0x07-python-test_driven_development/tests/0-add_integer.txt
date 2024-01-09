@@ -1,0 +1,28 @@
+The is the test case file
+###################################################
+
+
+    >>> add_integer = __import__("0-add_integer").add_integer
+
+::
+    >>> add_integer(12.0, 10)
+    22
+
+::
+    >>> add_integer(0, 0)
+    0
+
+Testing against a float
+::
+    >>> add_integer(2.0, 2.0)
+    4.0
+
+Testing against non int or float
+::
+    >>> add_integer(2, man)
+    Traceback (most recent call last):
+    TypeError: (b must be an integer)
+
+    >>> add_integer(alex, 3)
+    Traceback (most recent call last):
+    TypeError: (a must be an integer)
