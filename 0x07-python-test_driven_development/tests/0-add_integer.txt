@@ -26,3 +26,19 @@ Testing against non int or float
     >>> add_integer(alex, 3)
     Traceback (most recent call last):
     TypeError: (a must be an integer)
+
+Testing against signed values
+::
+    >>> add_integer(20, -6)
+
+Testing it agains a empty input
+::
+    >>> add_integer(NONE)
+    Traceback (most recent call last):
+    TypeError: (a must be an integer)
+
+Testing aginst a long input::
+::
+    >>> add_integer(100e999)
+    Traceback (most recent call last):
+    OverflowError: (can't convert infinite float or int)
