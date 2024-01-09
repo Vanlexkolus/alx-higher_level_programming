@@ -30,7 +30,7 @@ Testing against zero and below zero
 
 ::
 Testing against an empty argument
-    >>> print_square(NONE)
+    >>> print_square(None)
     Traceback (most recent call last)
     TypeError: (size must be an integer)
 
