@@ -10,9 +10,6 @@ def read_file(filename=""):
     """
     filename = str(filename)
     with open(filename, "r") as file:
-        size = 50
-        read_file = file.read(size)
-        while len(read_file) > 0:
-            print(read_file, end="")
-            read_file = file.read(size)
+        read_file = file.read()
+        print(read_file, end="")
     print("")
