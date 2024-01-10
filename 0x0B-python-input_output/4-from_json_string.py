@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-import json
 """
 This is a function that converts a JSON file into
 a python file
 """
+import json
 
 
 def from_json_string(my_str):
