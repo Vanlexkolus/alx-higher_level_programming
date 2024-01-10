@@ -12,4 +12,4 @@ def to_json_string(my_obj):
     it as a JSON rep of a string
     """
     JsFile = json.dumps(my_obj)
-    print(JsFile)
+    return JsFile
