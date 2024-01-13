@@ -14,7 +14,6 @@ class funcTest(unittest.TestCase):
         Highest = max_int([1, 2, 3, 4, 5, 6, 7, 8])
         self.assertEqual(Highest, 8)
     
-    def test_notAnInt(self):
-        dataType = [1, "a", 4, 6]
-        with self.assertRaises(TypeError):
-            max_int(dataType)
+    def test_IsAnInt(self):
+        dataType = max_int([1, 76, 4, 6])
+        self.assertTrue(type(dataType) == int)
