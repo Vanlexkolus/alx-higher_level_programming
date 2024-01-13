@@ -9,7 +9,7 @@ def class_to_json(obj):
     """
     Returns the dictionary description with a simple data structure
     for JSON serialization of an object.
-    """
+
     obj_dictionary = obj.__dict__
 
     if hasattr(obj, "__class__"):
@@ -17,4 +17,5 @@ def class_to_json(obj):
     for key, value in obj_dictionary.items():
         if hasattr(value, "__dict__"):
             obj_dictionary[key] = value.__dict__
-    return obj_dictionary
+    """
+    return obj.__dict__
