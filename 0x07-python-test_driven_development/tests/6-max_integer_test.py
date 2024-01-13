@@ -6,7 +6,6 @@ class funcTest(unittest.TestCase):
 
     def test_isNon(self):
         self.assertIsNone(max_int([]))
-        return None
     
     def test_isNotNone(self):
         self.assertIsNotNone(max_int([1, 2, 3, 4, 5, 6, 7]))
