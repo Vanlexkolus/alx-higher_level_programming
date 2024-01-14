@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 This module is of a class MyList that inherits
-from 'list'
+'list'
 """
 
 class MyList(list):
