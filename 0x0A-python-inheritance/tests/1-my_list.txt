@@ -10,15 +10,15 @@ This is the test case of the 1-my_list.py file
     >>> function.append(1)
     >>> function.append(4)
     >>> function.append(2)
-    >>> print (function)
+    >>> print(function)
     >>> [1, 4, 2]
-    >>> print (function.print_sorted())
+    >>> print(function.print_sorted())
     >>> [1, 2, 4]
-    
+
 ##
     >>> function_2 = MyList()
-    >>> print (function_2)
+    >>> print(function_2)
     >>> []
-    >>> print (function_2.print_sorted())
+    >>> print(function_2.print_sorted())
     Traceback (most recent call last):
     AttributeError: (object has no attribute)
