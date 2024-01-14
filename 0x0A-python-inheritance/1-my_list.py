@@ -3,10 +3,8 @@
 This module is of a class MyList that inherits
 from 'list'
 """
-from typing import List
 
-
-class MyList(List):
+class MyList(list):
     """
     This is a class that inherits a built-in
     class name 'list' and has different methods
