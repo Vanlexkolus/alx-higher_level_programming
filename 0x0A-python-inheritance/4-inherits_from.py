@@ -12,4 +12,7 @@ def inherits_from(obj, a_class):
     This function takes in two args
     the obj and the class type
     """
-    return type(obj) is not a_class
+    if type(obj) is not a_class:
+        return True
+    else:
+        return False
