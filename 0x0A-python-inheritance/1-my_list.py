@@ -10,6 +10,9 @@ class MyList(list):
     This is a class that inherits a built-in
     class name 'list' and has different methods
     """
+    def __init__(self):
+        super().__init__
+
     def print_sorted(self):
         """
         This method uses the 'sorted' function present
