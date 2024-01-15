@@ -1,0 +1,30 @@
+This is a test case for the base-geometry project
+########################################################
+
+"""
+This file contains doctests for the BaseGeometry class.
+"""
+
+# Importing the correct method from the module
+>>> integer_validator = __import__('7-base_geometry').BaseGeometry.integer_validator
+
+# Creating an instance of BaseGeometry
+>>> base_geometry_instance = BaseGeometry()
+
+# Test case 1
+>>> integer_validator(base_geometry_instance, "width", 10)
+>>> # No exception should be raised for a valid integer value
+
+# Test case 2
+>>> integer_validator(base_geometry_instance, "height", "invalid")
+Traceback (most recent call last):
+    ...
+TypeError: <name> must be an integer
+>>> # TypeError should be raised for a non-integer value
+
+# Test case 3
+>>> integer_validator(base_geometry_instance, "side", -5)
+Traceback (most recent call last):
+    ...
+ValueError: <name> must be greater than 0
+>>> # ValueError should be raised for a value less than or equal to 0
