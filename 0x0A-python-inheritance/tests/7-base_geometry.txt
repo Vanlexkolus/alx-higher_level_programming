@@ -9,7 +9,7 @@ This file contains doctests for the BaseGeometry class.
 >>> integer_validator = __import__('7-base_geometry').BaseGeometry.integer_validator
 
 # Creating an instance of BaseGeometry
->>> base_geometry_instance = BaseGeometry()
+>>> integer_validator(base_geometry_instance, "width", 10)
 
 # Test case 1
 >>> integer_validator(base_geometry_instance, "width", 10)
