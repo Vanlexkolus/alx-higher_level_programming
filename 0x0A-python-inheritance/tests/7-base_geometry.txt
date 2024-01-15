@@ -19,12 +19,12 @@ This file contains doctests for the BaseGeometry class.
 >>> integer_validator(base_geometry_instance, "height", "invalid")
 Traceback (most recent call last):
     ...
-TypeError: name must be an integer
+TypeError: age must be an integer
 >>> # TypeError should be raised for a non-integer value
 
 # Test case 3
 >>> integer_validator(base_geometry_instance, "side", -5)
 Traceback (most recent call last):
     ...
-ValueError: name must be greater than 0
+ValueError: age must be greater than 0
 >>> # ValueError should be raised for a value less than or equal to 0
