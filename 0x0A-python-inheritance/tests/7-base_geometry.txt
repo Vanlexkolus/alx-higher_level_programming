@@ -23,8 +23,29 @@ TypeError: age must be an integer
 >>> # TypeError should be raised for a non-integer value
 
 # Test case 3
->>> integer_validator(base_geometry_instance, "side", -5)
+>>> integer_validator(base_geometry_instance, "side", -4)
 Traceback (most recent call last):
     ...
 ValueError: age must be greater than 0
 >>> # ValueError should be raised for a value less than or equal to 0
+
+# Test case 4
+>>> integer_validator(base_geometry_instance, "height", 3.6)
+Traceback (most recent call last):
+    ...
+TypeError: age must be an integer
+>>> # TypeError should be raised for a non-integer value
+
+# Test case 5
+>>> integer_validator(base_geometry_instance, "height", 0)
+Traceback (most recent call last):
+    ...
+TypeError: age must be greater than 0
+>>> # TypeError should be raised for a non-integer value
+
+# Test case 6
+>>> integer_validator(base_geometry_instance, "height", 0)
+Traceback (most recent call last):
+    ...
+TypeError: age must be greater than 0
+>>> # TypeError should be raised for a non-integer value
