@@ -112,3 +112,13 @@ class Rectangle(Base):
             for vertical in range(self.__width):
                 print("#", end="")
             print()
+
+    def __str__(self):
+        """
+        The __str__ method returns
+        [Rectangle] (<id>) <x>/<y> - <width>/<height>
+        """
+        return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
+                                                self.id, self.__x,
+                                                self.__y, self.__width,
+                                                self.__height)
