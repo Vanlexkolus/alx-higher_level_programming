@@ -9,6 +9,7 @@ class Base:
     This class will have some class attributes
     """
     __nb_objects = 0
+
     def __init__(self, id=None):
         """
         This function collects one argument
@@ -18,7 +19,8 @@ class Base:
         __nb_objects and assign the new value to the public instance attribute
         id
         """
-        if id != None:
+
+        if id is not None:
             self.id = id
         else:
             Base.__nb_objects += 1
