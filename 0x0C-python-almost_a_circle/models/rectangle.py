@@ -29,15 +29,15 @@ class Rectangle(Base):
         return self.__width
 
     @width.setter
-    def width(self, new_wid):
+    def width(self, value):
         """
         This is the setter
         """
-        if type(new_wid) != int:
+        if type(value) != int:
             raise TypeError("width must be an integer")
-        elif new_wid <= 0:
+        elif value <= 0:
             raise ValueError("width must be > 0")
-        self.__width = new_wid
+        self.__width = value
 
     @property
     def height(self):
@@ -47,15 +47,15 @@ class Rectangle(Base):
         return self.__height
 
     @height.setter
-    def height(self, newH_val):
+    def height(self, value):
         """
         This is the setter
         """
-        if type(newH_val) != int:
+        if type(value) != int:
             raise TypeError("height must be an integer")
-        elif newH_val <= 0:
+        elif value <= 0:
             raise ValueError("height must be > 0")
-        self.__height = newH_val
+        self.__height = value
 
     @property
     def x(self):
@@ -65,15 +65,15 @@ class Rectangle(Base):
         return self.__x
 
     @x.setter
-    def x(self, x_val):
+    def x(self, value):
         """
         This is the setter
         """
-        if type(x_val) != int:
+        if type(value) != int:
             """raise TypeError("Not an int")"""
-        elif x_val < 0:
+        elif value < 0:
             raise ValueError("x must be >= 0")
-        self.__x = x_val
+        self.__x = value
 
     @property
     def y(self):
@@ -83,15 +83,15 @@ class Rectangle(Base):
         return self.__y
 
     @y.setter
-    def y(self, y_val):
+    def y(self, value):
         """
         This is the setter
         """
-        if type(y_val) != int:
+        if type(value) != int:
             """raise TypeError("Not an int")"""
-        elif y_val < 0:
+        elif value < 0:
             raise ValueError("y must be >= 0")
-        self.__y = y_val
+        self.__y = value
 
     def area(self):
         """
@@ -99,3 +99,16 @@ class Rectangle(Base):
         area of the rectangle instance
         """
         return self.__width * self.__height
+
+    def display(self):
+        """
+        This is a method that prints a rectangle
+        """
+        for y in range(self.__y):
+            print("")
+        for horizontal in range(self.__height):
+            for i in range(self.__x):
+                print(" ", end="")
+            for vertical in range(self.__width):
+                print("#", end="")
+            print()
