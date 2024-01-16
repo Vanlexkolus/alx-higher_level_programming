@@ -92,7 +92,7 @@ class Rectangle(Base):
         elif y_val < 0:
             raise ValueError("y must be >= 0")
         self.__y = y_val
-    
+
     def area(self):
         """
         This is a public method that returns the
