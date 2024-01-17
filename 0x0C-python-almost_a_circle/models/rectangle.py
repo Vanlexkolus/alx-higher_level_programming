@@ -147,3 +147,34 @@ class Rectangle(Base):
                                                 self.id, self.__width,
                                                 self.__height, self.__x,
                                                 self.__y)
+
+    def update(self, *args, **kwargs):
+        """
+        Assigns key/value arguments to attributes:
+        *args is used for positional arguments
+        (same as before)
+        **kwargs is used for key-worded arguments (new)
+        Each key in **kwargs represents an attribute to
+        the instance
+        This type of argument is called a “key-worded argument”.
+        Argument order is not important.
+        """
+        if args:
+            """If *args exists and is not empty, update
+            attributes using *args
+            """
+            self.id = args[0] if len(args) >= 1 else self.id
+            self.width = args[1] if len(args) >= 2 else self.width
+            self.height = args[2] if len(args) >= 3 else self.height
+            self.x = args[3] if len(args) >= 4 else self.x
+            self.y = args[4] if len(args) >= 5 else self.y
+        else:
+            """
+            If *args is empty or doesn't exist, update
+            attributes using **kwargs
+            """
+            for key, value in kwargs.items():
+                setattr(self, key, value)
+        return "[{}] ({}) {}/{} - {}/{}".format(self.__class__.__name__,
+                                                self.id, self.width,
+                                                self.height, self.x, self.y)
