@@ -13,8 +13,8 @@ let index = 0;
 if (isNaN(multiple)) {
   console.log('Missing number of occurrences');
 } else {
-    while (multiple > index) {
-      console.log('C is fun');
-      index++;
-    }
+  while (multiple > index) {
+    console.log('C is fun');
+    index++;
+  }
 }
