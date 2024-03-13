@@ -6,7 +6,7 @@
     You are not allowed to declare any new variable (var, let, etc..)
 */
 exports.converter = function (base) {
-    return function (n) {
-      return n.toString(base);
-    };
+  return function (n) {
+    return n.toString(base);
   };
+};
