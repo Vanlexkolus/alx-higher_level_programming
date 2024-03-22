@@ -20,7 +20,7 @@ if __name__ == "__main__":
     session = Session()
 
     # Get first state object from database
-    state_name = argv[4]
+    state_name = argv[3]
     states = session.query(State).filter(
             State.name == state_name).first()
 
