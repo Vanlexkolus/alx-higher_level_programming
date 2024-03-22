@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 """
-This is a script thatg get State objects that have 'a'
-from the database hbtn_0e_6_usa
+This is a script that get State objects that
+have a from the database hbtn_0e_6_usa
 """
-
 from sqlalchemy import create_engine
 from model_state import Base, State
 from sqlalchemy.orm import sessionmaker
